@@ -1,2 +1,2 @@
 # andredebruijn
-site andredebruijn.nl
+site http://andredebruijn.nl
