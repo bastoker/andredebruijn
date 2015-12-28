@@ -1,0 +1,128 @@
+html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	background: transparent;
+	border: none;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Trebuchet MS,Helvetica,sans-serif;
+	background-color: #3E3E3E;
+	color: #CECECE;
+}
+hr,br
+{
+	clear: both;
+	color: red;
+	border-color: red;
+}
+hr
+{
+	size: 4px;
+}
+h1
+{
+	font-size: 250%;
+	padding-top: 0px;
+	margin-top: 0px;	
+}
+p
+{
+	padding-top: 17px;
+	clear: none;
+}
+li 
+{
+	font-weight: bold;
+}
+
+span.album
+{
+	display: inline-block;
+	margin: 12px;
+}
+span.sponsors
+{
+	display: inline-block;
+	margin: 12px;
+}
+a{
+	font-size: 115%;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.invisible
+{
+	display: none;
+	height: 0px;
+	widht: 0px;
+}
+a:hover {
+	font-size: 115%;
+	color: #BABABA;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.gallery {
+	text-decoration: none;
+}
+a.galery:hover {
+	text-decoration: none;
+}
+img.rechtsintekstzonderborder
+{
+	float: right;
+}
+img.rechtsintekst
+{	
+	float: right;
+	margin: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+img.linksintekst
+{
+	float: left;
+	margin: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;	
+}
+
+img.galery {
+	border-style: solid;
+	border-width: 6px;
+	border-color: white;	
+}
+#header
+{
+	margin: 0 auto;	
+	width: 916px;
+	background-color: #000;
+}
+
+#menu
+{
+	float: left;
+	position: relative;
+	padding-left: 10px;
+	top: -100px;	
+	width: 900px;
+	height: 1px;
+}
+.container
+{
+	margin: 0 auto;	
+	width: 916px;
+	background: url(images/contentGradient.png) top repeat-x;
+}
+.content
+{
+	width: 700px;
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-left: 20px;	
+}
+

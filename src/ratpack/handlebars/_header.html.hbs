@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>André de Bruijn – Audi A3 Toerwagenklasse</title>
+		<link rel="stylesheet" type="text/css" href="/style.css" />
+		<script type="text/javascript" src="/js/jquery-1.2.6.js"></script>
+    	<script type="text/javascript">  	
+    	$(function() {
+    	    $("img.menuitem")
+    	        .mouseover(function() { 
+    	            var src = $(this).attr("src").match(/[^\.]+/) + "_hover.png";
+    	            $(this).attr("src", src);
+    	        })
+    	        .mouseout(function() {
+    	            var src = $(this).attr("src").replace("_hover", "");
+    	            $(this).attr("src", src);
+    	        });
+    	});
+        </script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-31445629-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+</script>        
+	</head>
+	<body>
+		<div id="header">
+			<img src="images/header.png" alt="Weblog André de Bruijn" usemap="#map"></img>
+			 <map name="map" id="home">
+            	<area shape="rect" coords="0,0,916,150" href="/" 
+      				title="Home" alt="Home" />
+      		</map> 
+			<div id="menu"><a href="blog.html" class="blog"><img src="images/blog.png" class="menuitem"/></a><img src="images/spacer.png"/><a href="bio.html" class="blog"><img src="images/bio.png" class="menuitem"/></a><img src="images/spacer.png"/><a href="fotos.html" class="blog"><img src="images/fotos.png" class="menuitem"/></a><img src="images/spacer.png"/><a href="agenda.html" class="blog"><img src="images/agenda.png" class="menuitem"/></a><img src="images/spacer.png"/><a href="sponsors.html" class="blog"><img src="images/sponsors.png" class="menuitem"/></a></div>
+		</div>
+		<div class="container">
