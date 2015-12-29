@@ -1,17 +1,8 @@
-buildscript {
-  repositories {
-    jcenter()
-  }
-  dependencies {
-    classpath "io.ratpack:ratpack-gradle:1.1.1"
-    classpath "com.github.jengelman.gradle.plugins:shadow:1.2.2"
-  }
+plugins {
+    id 'com.bmuschko.docker-java-application' version '2.6.1'
+    id 'io.ratpack.ratpack-groovy' version '1.1.1'
+    id 'idea'    
 }
-
-apply plugin: "io.ratpack.ratpack-groovy"
-apply plugin: "com.github.johnrengelman.shadow"
-apply plugin: "idea"
-apply plugin: "eclipse"
 
 repositories {
   jcenter()
@@ -22,5 +13,21 @@ dependencies {
   // See here for a non blocking appender http://logging.apache.org/log4j/2.x/manual/async.html
   runtime 'org.slf4j:slf4j-simple:1.7.12'
   compile ratpack.dependency('handlebars')
-  testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+}
+
+docker {    
+    url = project.hasProperty('dockerUrl') ?
+                project.getProperty('dockerUrl') :
+                'https://192.168.99.100:2376'
+
+    certPath = project.hasProperty('dockerCertPath') ?
+                new File(project.getProperty('dockerCertPath')) :
+                new File(System.properties['user.home'], '.docker/machine/machines/default')
+
+    // Configuration for Java application image.
+    javaApplication {
+        baseImage = 'anapsix/alpine-java:jre8'
+        maintainer = "Bas Stoker <bastoker>"       
+        port = 5050
+    }
 }
